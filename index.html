@@ -10,7 +10,7 @@
 </head>
 
 <body ng-controller="main">
-    <div ng-repeat="val in data.value" class="box">
+    <div ng-repeat="val in data.value.promise" class="box">
         <img ng-src="{{val.img}}" alt="">
     </div>
 </body>

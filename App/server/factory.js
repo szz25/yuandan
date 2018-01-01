@@ -6,7 +6,7 @@ app.factory('ajax', function($q, $http) {
                 .then(function(result) {
                     defer.resolve(result.data)
                 })
-            return defer.promise.$$state
+            return $q.all(defer).$$state
         }
     }
 })
